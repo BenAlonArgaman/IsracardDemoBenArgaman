@@ -10,7 +10,7 @@ const Layout = () => {
           title: "מועדפים",
           headerRight: () => <SortMenu />,
           headerSearchBarOptions: {
-            placeholder: "חיפוש לפי שם ספר או תיאור",
+            placeholder: "חיפוש לפי שם ספר או תיאור...",
             onChangeText: (event) => {
               // Update the search query parameter
               router.setParams({ q: event.nativeEvent.text });
