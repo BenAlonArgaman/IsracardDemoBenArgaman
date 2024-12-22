@@ -1,6 +1,7 @@
 import { Book } from "@/types";
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
+// Creating the books API slice
 export const booksApiSlice = createApi({
   reducerPath: "booksApi",
   baseQuery: fetchBaseQuery({
@@ -20,4 +21,5 @@ export const booksApiSlice = createApi({
   }),
 });
 
+// Export the hooks for the books API
 export const { useGetBooksQuery } = booksApiSlice;
