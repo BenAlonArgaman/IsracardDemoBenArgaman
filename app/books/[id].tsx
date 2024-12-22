@@ -10,7 +10,7 @@ import { useMemo } from "react";
 import { Book } from "@/types";
 import useBookFavorite from "@/hooks/useBookFavorite";
 
-// Memoized components for better performance
+// Memoized components for performance
 const BookStats = ({
   pages,
   releaseDate,
