@@ -1,4 +1,6 @@
 import { SortMenu } from "@/components/SortMenu";
+import { Colors } from "@/constants/Colors";
+import { useColorScheme } from "@/hooks/useColorScheme";
 import { router, Stack } from "expo-router";
 
 const Layout = () => {
@@ -6,6 +8,12 @@ const Layout = () => {
     <Stack
       screenOptions={{
         headerLargeTitle: true,
+        contentStyle: {
+          backgroundColor:
+            useColorScheme() === "dark"
+              ? Colors.dark.background
+              : Colors.light.background,
+        },
       }}
     >
       <Stack.Screen
