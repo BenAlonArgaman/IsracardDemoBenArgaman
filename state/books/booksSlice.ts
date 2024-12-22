@@ -2,10 +2,12 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { Book } from "@/types";
 import { RootState } from "@/state/store";
 
+// Define the state for the books slice
 interface BooksState {
   favorites: Book[];
 }
 
+// Initial state for the books slice
 const initialState: BooksState = {
   favorites: [],
 };
