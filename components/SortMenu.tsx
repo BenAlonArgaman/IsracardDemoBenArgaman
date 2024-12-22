@@ -10,6 +10,7 @@ export const SORT_OPTIONS = {
 } as const;
 
 export function SortMenu() {
+  // using Zeego DropdownMenu
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger>
