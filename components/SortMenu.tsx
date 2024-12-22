@@ -1,6 +1,6 @@
 import { MaterialIcons } from "@expo/vector-icons";
 import { router } from "expo-router";
-import { Pressable, useColorScheme } from "react-native";
+import { TouchableOpacity, useColorScheme } from "react-native";
 import * as DropdownMenu from "zeego/dropdown-menu";
 
 export const SORT_OPTIONS = {
@@ -13,13 +13,13 @@ export function SortMenu() {
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger>
-        <Pressable>
+        <TouchableOpacity>
           <MaterialIcons
             name="sort"
             size={24}
             color={useColorScheme() === "dark" ? "white" : "black"}
           />
-        </Pressable>
+        </TouchableOpacity>
       </DropdownMenu.Trigger>
       <DropdownMenu.Content>
         <DropdownMenu.Item
