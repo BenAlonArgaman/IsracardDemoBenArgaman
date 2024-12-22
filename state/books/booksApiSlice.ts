@@ -8,6 +8,7 @@ export const booksApiSlice = createApi({
     baseUrl: "https://potterapi-fedeperin.vercel.app/en",
   }),
   tagTypes: ["Books"],
+  keepUnusedDataFor: 24 * 60 * 60, // 24 hours in seconds
   endpoints: (builder) => ({
     getBooks: builder.query<Book[], void>({
       query: () => "/books",
