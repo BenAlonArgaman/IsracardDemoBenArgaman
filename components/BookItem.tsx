@@ -8,7 +8,7 @@ import { useRouter } from "expo-router";
 
 const BookItem = ({ book }: { book: Book }) => {
   const router = useRouter();
-
+  // Simple function to navigate to the book details page
   const handlePress = () => {
     router.push(`/books/${book.number}`);
   };
