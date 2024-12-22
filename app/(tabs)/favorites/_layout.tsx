@@ -6,7 +6,6 @@ const Layout = () => {
     <Stack
       screenOptions={{
         headerLargeTitle: true,
-        contentStyle: { backgroundColor: "white" },
       }}
     >
       <Stack.Screen
