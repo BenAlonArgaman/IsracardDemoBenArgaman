@@ -35,7 +35,7 @@ const Page = () => {
       contentContainerStyle={{ paddingBottom: 100 }}
       renderItem={({ item }) => <BookItem book={item} />}
       keyExtractor={(item) => item.number.toString()}
-      estimatedItemSize={100}
+      estimatedItemSize={80}
     />
   );
 };
