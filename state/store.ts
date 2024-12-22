@@ -4,6 +4,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { booksApiSlice } from "./books/booksApiSlice";
 import booksReducer from "./books/booksSlice";
 
+// Redux persist configuration
 const persistConfig = {
   key: "root",
   storage: AsyncStorage,
