@@ -18,10 +18,8 @@ const Page = () => {
     if (!books) return [];
     if (!searchQuery) return books;
 
-    return books.filter(
-      (book) =>
-        book.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        book.number.toString().includes(searchQuery)
+    return books.filter((book) =>
+      book.title.toLowerCase().includes(searchQuery.toLowerCase())
     );
   }, [books, searchQuery]);
 
